@@ -22,7 +22,7 @@ jobs:
        run: npm run test
   deploy:
     needs: test
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
         - name: Get Code
           uses: actions/checkout@v3
